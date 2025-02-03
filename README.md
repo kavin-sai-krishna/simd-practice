@@ -14,6 +14,8 @@ Follow these steps to configure and build the project:
 ```sh
  git clone <repository_url>
  cd matrix-mul
+ (or)
+ cd matrix-transpose
 ```
 
 ### 2. Create a Build Directory
