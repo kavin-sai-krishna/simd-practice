@@ -33,25 +33,26 @@ cmake -G "Visual Studio 17 2022" ..  # For Visual Studio
 
 ### 4. Build the Project
 ```sh
-cmake --build .
+cmake --build . --config Release
 ```
 
 ### 5. Run Tests
 Execute the test binary directly:
 ```sh
-./VALIDATE  # Linux/macOS
-VALIDATE.exe  # Windows
+./Release/VALIDATE  # Linux/macOS
+Release/VALIDATE.exe  # Windows
 ```
 
 ### 6. Run Benchmarks
 To run the benchmark executable:
 ```sh
-./BENCHMARK  # Linux/macOS
-BENCHMARK.exe  # Windows
+./Release/BENCHMARK  # Linux/macOS
+Release/BENCHMARK.exe  # Windows
 ```
 
 ## Notes
 - If you modify CMakeLists.txt, re-run the configuration step (`cmake ..`).
 - If you encounter any issues, ensure dependencies are correctly fetched and installed.
+- If you want to change the array size or the number of iterations for benchmark edit N or Iterations in the (.h) file.
 
 
