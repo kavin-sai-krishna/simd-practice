@@ -1,7 +1,7 @@
 #pragma once
 #include<array>
 
-constexpr int N = 1024;
+constexpr int N = 1056;
 constexpr int blocksize = 16;
 constexpr int ITERS = 25;
 using T = float;
@@ -14,3 +14,4 @@ void init(Matrix &matrix);
 void copy(Matrix &target,Matrix &source);
 // void transpose_recursive(Matrix &result,int i,int j,int n);
 void transpose_block(Matrix &result);
+void avx_multiply(Matrix &result, const Matrix &a, const Matrix &b);

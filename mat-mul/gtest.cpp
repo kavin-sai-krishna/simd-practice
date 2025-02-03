@@ -52,3 +52,16 @@ TEST(mul_check,transpose_mul) {
     EXPECT_TRUE(equals(*c,*d));
 }
 
+TEST(mul_check,avx_multiply) {
+    std::unique_ptr<Matrix> a(new Matrix());
+    std::unique_ptr<Matrix> b(new Matrix());
+    std::unique_ptr<Matrix> c(new Matrix());
+    std::unique_ptr<Matrix> d(new Matrix());
+
+    init(*a);
+    init(*b); // b=a
+    naive_for(*c,*a,*b);
+    avx_multiply(*d,*a,*b);
+    EXPECT_TRUE(equals(*c,*d));
+}
+
