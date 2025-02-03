@@ -1,9 +1,9 @@
 # simd-practice
  SIMD practice for matrix transpose and matrix multiplication
 
-# Matrix Multiplication Project
+# SIMD Practice Project
 
-This project provides an implementation of matrix multiplication with testing and benchmarking capabilities using GoogleTest and Google Benchmark.
+This project provides an implementation of matrix multiplication and matrix transpose with testing and benchmarking capabilities using GoogleTest and Google Benchmark.
 
 
 ## Build Instructions
